@@ -6,6 +6,7 @@
   "author": "João Victor <santosjoao.dev@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "node ./build/app.js",
     "dev": "nodemon --exec ts-node --files ./src/app.ts",
     "build": "tsc"
   },
