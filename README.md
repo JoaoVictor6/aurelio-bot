@@ -1,4 +1,7 @@
 # Aurélio bot
+<p align="center">
+  <img alt="Top language" src="https://img.shields.io/github/languages/top/joaovictor6/aurelio-bot">
+</p>
 
 ## 💻 Projeto
 O aurélio é um bot feito com o intuito de ser um dicionário.
