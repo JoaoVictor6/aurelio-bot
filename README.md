@@ -10,6 +10,8 @@ O aurélio é um bot feito com o intuito de ser um dicionário.
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [TypeScript](https://www.typescriptlang.org/)
 - [Discord.js](https://discord.js.org/)
+- [Cheerio](https://github.com/cheeriojs/cheerio)
+- [Axios](https://github.com/axios/axios)
 
 ## 🙋‍♂️ Como usar
 Para o uso do bot, precisa-se configurar um arquivo _.env_ na raiz do projeto com a seguinte variavel:
