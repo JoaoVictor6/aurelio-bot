@@ -6,6 +6,10 @@
 ## 💻 Projeto
 O aurélio é um bot feito com o intuito de ser um dicionário.
 
+<p align="center">
+  <img alt="Project working" src="https://i.imgur.com/obfsAjB.gif">
+</p>
+
 ## 📚 Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [TypeScript](https://www.typescriptlang.org/)
