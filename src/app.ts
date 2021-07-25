@@ -12,6 +12,30 @@ client.on("ready", () => {
 });
 
 client.on("message", async (message: Message) => {
+  if (message.content === "??sobre") {
+    const embed = new MessageEmbed({
+      thumbnail: {
+        url: "https://i.ibb.co/Fsyc897/644129-Aln8-Nr-FK.png",
+        width: 1500,
+      },
+      color: "#FAAB05",
+      title: "Informações sobre o projeto",
+      fields: [
+        {
+          name: "Links úteis:",
+          value: `
+            [GitHub](https://github.com/JoaoVictor6/aurelio-bot)
+            [Twitter](https://twitter.com/PrazerJo)
+          `,
+        },
+      ],
+    });
+
+    message.reply(embed);
+
+    return;
+  }
+
   if (message.content[0] === "?") {
     const wordPass = message.content
       .replace("?", "")
@@ -51,6 +75,7 @@ function createEmbedMesssage(
 
   if (etimologia.length === 0) {
     return {
+      color: "#0583F2",
       author: {
         name: `Palavra ${title} 📚`,
       },
@@ -68,6 +93,7 @@ function createEmbedMesssage(
   }
 
   return {
+    color: "#0583F2",
     author: {
       name: `Palavra ${title} 📚`,
     },
