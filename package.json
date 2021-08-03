@@ -8,18 +8,24 @@
   "scripts": {
     "start": "node ./build/app.js",
     "dev": "nodemon --exec ts-node --files ./src/app.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "lint": "eslint --fix --quiet ./src/**/*.ts"
   },
   "dependencies": {
     "@types/node": "^16.4.1",
     "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.10",
     "discord.js": "^12.5.3",
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.23.4"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/cheerio": "^0.22.30",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
     "nodemon": "^2.0.12",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.5"
