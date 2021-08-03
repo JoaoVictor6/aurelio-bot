@@ -24,26 +24,13 @@ BOT_TOKEN="[o token do seu bot]"
 ```
 
 Após congiurar a variável de ambiente,  se quiser rodar o bot, digite:
-```
-yarn dev
-```
+`yarn dev` ou `npm dev`
 
-ou
 
-```
-npm dev
+Para gerar a build, digite: 
+`yarn build ` ou `npm build`
 
-```
-
-Para gerar uma versão de produção do projeto, digite: 
-```
-yarn build 
-```
-ou
-
-```
-npm build 
-```
+Para rodar a versão de build, digite: `yarn start` ou `npm start` 
 
 ## 📝 Licença
 
