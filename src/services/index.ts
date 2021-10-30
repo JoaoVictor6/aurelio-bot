@@ -29,15 +29,11 @@ export async function scrapeMeaning(
     const elementHtml = $(element);
 
     if (!elementHtml.hasClass('etim') && !elementHtml.hasClass('cl')) {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
       dicionarioResponse.significado.push(elementValue);
     }
 
     if (elementHtml.hasClass('etim')) {
       dicionarioResponse.etimologia.push(
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
         elementValue.split('.')[1].replace(' ', ''),
       );
     }
