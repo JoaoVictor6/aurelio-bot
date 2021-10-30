@@ -8,8 +8,11 @@
   "scripts": {
     "start": "node ./build/app.js",
     "dev": "ts-node-dev --respawn --transpile-only ./src/app.ts",
-    "build": "tsc",
+    "build": "babel src --out-dir build --extensions '.ts' --source-maps inline",
     "lint": "eslint --fix --quiet ./src/**/*.ts"
+  },
+  "engines": {
+    "node": "14.x"
   },
   "dependencies": {
     "@types/node": "^16.4.1",
@@ -21,6 +24,10 @@
     "eslint-plugin-import": "^2.23.4"
   },
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
     "@types/axios": "^0.14.0",
     "@types/cheerio": "^0.22.30",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
