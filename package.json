@@ -11,6 +11,9 @@
     "build": "tsc",
     "lint": "eslint --fix --quiet ./src/**/*.ts"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "dependencies": {
     "@types/node": "^16.4.1",
     "axios": "^0.21.1",
