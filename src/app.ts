@@ -4,6 +4,8 @@ import { scrapeMeaning } from './services';
 import createEmbedMesssage from './services/createEmbedMessage';
 
 dotenv.config();
+// eslint-disable-next-line import/first
+import './server';
 
 const Discord = require('discord.js');
 
